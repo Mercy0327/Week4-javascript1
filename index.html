@@ -19,7 +19,7 @@
 
         <script>
             function lesson1(params) {
-                document.getElementById("heading1").innerHTML="This is Javascript!";
+                document.getElementById("heading1").innerHTML="This is Javascript!" ;
                 document.getElementById("text1").innerHTML = "It's a bit tricky";
             }
 
@@ -27,5 +27,23 @@
     </div>
 
     
+<!--lesson 2-->
+        <div class="lesson"></div>
+        <h3 >Lesson 2:Variables (Text storage)</h3>
+
+        <h2 id="heading2">Text will change</h2>
+        <p id="text2">More text here</p>
+        <button onclick="lesson2()" >Use variables</button>
+
+        <script>
+            function lesson2() {
+            var message1 = "Hello humans!";
+            var message2 ="Javascript is fun!";
+            var message3 ="Learning is fun!";
+
+            document.getElementById("heading2").innerHTML = (message1)
+            document.getElementById("text2").innerHTML = (message1 + " " + message2)
+            }
+        </script>
 </body>
 </html> 
