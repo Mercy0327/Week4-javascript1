@@ -93,7 +93,37 @@
 </div>
 
 <!--lesson 6-->
+<div class="lesson">
+       <h3>Lesson 6: Functions (Script Version)</h3>
 
+        <h2 id="toggle" onclick="toggleText()">Javascript!</h2>
 
+        <script>
+            function toggleText() {
+                var toggle = document.getElementById("toggle");
+                if (toggle.innerHTML == "Javascript!") {
+                    toggle.innerHTML = "is awesome!";
+                } else {
+                    toggle.innerHTML = "Javascript!";
+                }
+            }
+    </script>
+</div>
+
+<!--lesson 7-->
+ <div class="lesson">
+    <h2>Lesson 7: Function parameters</h2>
+    <p><strong> Concept</strong>: Passing data into functions </p>
+
+    <button onclick="addNumbers(10, 7)">Add 10 + 7</button>
+    <button onclick="addNumbers(25, 18)">Add 25 +  18</button>
+    <button onclick="addNumbers(1245, 562)">Add 1245 + 562</button>
+    <div class="output" id="addition7">Result will show here</div>
+
+    <script>
+        function addNumbers(num1, num2) {
+          document.getElementById("addition7").innerHTML = (num1 + num2) } 
+    </script>
+ </div>
 </body>
 </html> 
