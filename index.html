@@ -10,7 +10,7 @@
     <h1>Javascript week 4</h1>
 
     <!--lesson 1-->
-    <div>
+    <div class="lesson">
         <h3>lesson 1:show text on page</h3>
 
         <h2 id="heading1">Hello</h2>
@@ -28,7 +28,7 @@
 
     
 <!--lesson 2-->
-        <div class="lesson"></div>
+        <div class="lesson">
         <h3 >Lesson 2:Variables (Text storage)</h3>
 
         <h2 id="heading2">Text will change</h2>
@@ -45,6 +45,7 @@
             document.getElementById("text2").innerHTML = (message1 + " " + message2)
             }
         </script>
+        </div>
 
         <!--lesson 3-->
         <div class="lesson">
@@ -165,9 +166,40 @@
                 "Local: " + localVariable +  "<br>" +
                 "Local variable only exist inside their function";   
             }
-            
-           
+             
         </script>
+        
 </div>
+
+
+<!--lesson 10-->
+
+<div class="lesson">
+    <h2>Lesson 10: Login form part 1</h2>
+    <p><strong>Concept:</strong>Getting user input from form elements</p>
+
+        <form>
+            <label for="usernameInput10">Username:</label>
+            <input type="text" id="usernameInput10"/> <br><br>
+
+            <label for="passwordInput10">Password</label>
+            <input type="password" id="passwordInput10"/> <br><br>
+            <button type="button" onclick="verifyUser10()">Get input values</button>
+            </form>
+
+            <div class="output" id="message10">Eneter username and password, then click button</div>
+
+            <script>
+                function verifyUser10(p) {
+                   var username = document.getElementById("usernameInput10").value;
+                   var password = document.getElementById("passwordInput10").value;
+
+                   document.getElementById("message10").innerHTML = "Username entered: " + username +"<br> Password entered: " + password;
+                }
+            </script>
+</div>
+
+<!--lesson 11-->
+
 </body>
 </html> 
