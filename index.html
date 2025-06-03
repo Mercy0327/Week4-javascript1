@@ -242,5 +242,54 @@
 
     </div>
 
+
+<!--lesson 12-->
+
+        <div class="lesson">
+            <h2>Lesson 12: The switch statement</h2>
+            <p><strong>Concept:</strong> Using statement for multiple conditions </p>
+
+            <label for="weather12">Select weather</label>
+            <select id="weather12">
+                <option value ="">Choose weather...</option>
+                <option value = "Sunny">Sunny</option>
+                <option value = "Windy">Windy</option>
+                <option value = "Cold">Cold</option>
+            </select>
+
+            <button onclick="getWeatherAdvice()">Get Advice</button>
+            <div class="output" id="advice12">Select weather and click for advice</div>
+
+            <script>
+                function getWeatherAdvice() {
+                    let weatherSelected = document.getElementById("weather12").value;
+                    let advice;
+
+                    switch (weatherSelected) {
+                        case "Sunny":
+                            advice = "wear your sunscreen and sunglassses";
+                            break;
+                        case"Windy":
+                            advice = "secure loose items";
+                            break;
+                        case "Cold":
+                            advice = "wear your coat and boots";
+                            break;    
+                        default:
+                            advice = "Please select a weather condition from the list"
+                    }
+                    document.getElementById("advice12").innerHTML = advice;
+                }
+            </script>
+        </div>
+
+<!--lesson 13-->
+
+        <div class="lesson">
+            <h2>Lesson 13: Numbers and Strings part 1</h2>
+            <p><strong>Concept:</strong> Understanding how Javascript handles text vs numbers</p>
+
+            <button onclick="demonstrate"
+
 </body>
 </html> 
